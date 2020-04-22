@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    .person1 {
+        position: absolute;
+        height: 100%;
+        width: 33%;
+        padding: 2%;
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .person2 {
+        position: absolute;
+        height: 100%;
+        width: 33%;
+        left: 33%;
+        padding: 2%;
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .person3 {
+        position: absolute;
+        height: 100%;
+        width: 34%;
+        left: 66%;
+        padding: 2%;
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    body {
+        background-image: url("../assets/images/bk5.jpg");
+    }
+    
+    .bartype {
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: bold;
+        opacity: 1;
+        background-color: #c5b8a5;
+        margin: 0px 15% 0px 15%;
+        padding: 2% 2% 1% 4%;
+        position: relative;
+        z-index: 99;
+        font-size: 30px;
+    }
+    
+    .fade:not(.show) {
+        opacity: 1;
+    }
+    
+    .boardleft {
+        width: 70%;
+        height: 68%;
+        background-color: #d8caaf;
+        position: absolute;
+        left: 15%;
+        top 0%;
+        z-index: 1;
+        padding-top: 1px;
+    }
+    
+    .boardright {
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        width: 30%;
+        height: 96%;
+        background-color: #d8caaf;
+        font-family: 'cwTeXYen', sans-serif;
+        z-index: 1;
+    }
+    
+    .copyright {
+        /*著作權的框框*/
+        position: absolute;
+        top: 88%;
+        left: 15%;
+        width: 70%;
+        height: 12%;
+        background-color: black;
+        z-index: 20;
+    }
+    
+    .cc {
+        /*著作權的字型大小顏色*/
+        padding-top: 4%;
+        text-align: center;
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: 800px;
+        color: aliceblue;
+    }
+    
+    .rightsquare {
+        /*放介紹文字的框框*/
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+        height: 91%;
+        width: 90%;
+        background-color: #e0e5df;
+        padding: 15%;
+        /*字的style*/
+        color: black;
+        text-align: left;
+        font-family: 'cwTeXYen', sans-serif;
+        font-weight: 1000px;
+    }
+    
+    .littletitle {
+        color: black;
+        text-align: center;
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .iconspace {
+        padding-left: 40%;
+    }
+    
+    .persontext {
+        position: absolute;
+        left: 30%;
+        top: 58%;
+        width: 60%;
+        height: 50%;
+    }
+    
+    .personicon {
+        position: absolute;
+        top: 58%;
+        width: 30%;
+        height: 20%;
+        padding-top: 12%;
+    }
+    
+    div.heart {
+        
+        height: 15%;
+        width: 90%;
+        position: absolute;
+        top: 83%;
+        z-index: -1;
+    }
+.me:hover div
+{
+  animation-play-state: paused;
+}
+.me div
+{
+    animation: round 3s linear infinite;
+}
+
+#menu ul
+{
+	/* 取消ul樣式符號 */
+	list-style-type:none;
+	overflow:auto;
+}
+#menu ul li
+{
+	/* 利用float讓第一層li水平排列 */
+	float:left;
+}
+#menu ul li a
+{
+	
+	display:block;
+	float:left;
+	height:5%;
+	width: 100%;
+	text-align: center;
+	position: relative;
+    margin: 7px;/*讓ＢＡＲ有兼具*/
+	
+	
+}
+/* bar字型 */
+#menu ul li a
+{
+	color:black;
+	text-decoration:none;
+	line-height: 30px;
+}
+
+#menu ul li a:hover 
+{
+	color:white;
+}

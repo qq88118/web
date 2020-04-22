@@ -1,0 +1,210 @@
+            @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+            .slider_container {
+                margin: 3% auto;
+                width: 90%;
+                height: 87%;
+                position: relative;
+                border: 20px solid;    
+                border-color: black;
+                border-bottom-width: 20%;
+                background-color: #f5f5f5;
+                box-shadow: #666 0 0 5px;
+            }
+            .little_slider_container {
+                
+                width: 80%;
+                height: 90%;
+                position: relative;
+                
+            }
+
+            .slider_container div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            .slider_container div {
+                -webkit-animation: round 25s linear infinite;
+                animation: round 25s linear infinite;
+            }
+
+            @-webkit-keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+            @keyframes round {
+                4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                }
+                20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                }
+                24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                }
+            }
+            .slider_container div:nth-child(5) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+
+            .slider_container div:nth-child(4) {
+                -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+            }
+
+            .slider_container div:nth-child(3) {
+                -webkit-animation-delay: 10s;
+                animation-delay: 10s;
+            }
+
+            .slider_container div:nth-child(2) {
+                -webkit-animation-delay: 15s;
+                animation-delay: 15s;
+            }
+
+            .slider_container div:nth-child(1) {
+                -webkit-animation-delay: 20s;
+                animation-delay: 20s;
+            }
+            
+			body
+			{
+			
+				background-image: url("../assets/images/bk5.jpg");
+                
+			}
+            .bartype
+            {
+                font-family: 'cwTeXYen', sans-serif; 
+                font-weight: bold;
+                opacity: 1;
+                background-color: #c5b8a5 ; 
+                margin:0px 15% 0px 15%;
+                padding: 2% 2% 1% 4%;
+                position: relative; 
+                z-index: 99;
+                font-size: 30px;
+            }
+
+			.fade:not(.show){
+				opacity: 1;
+			}
+            .boardleft{
+                width: 70% ;
+                height: 68% ;
+                background-color: #c1cbd7 ;
+                position: absolute;left: 15% ; top 0% ;
+                z-index: 1;
+                padding-top: 1px ;
+            }
+            .boardright{
+                position: absolute;  top:25% ; right:5% ; 
+                width: 30% ; 
+                height:96%; 
+                background-color: #d8caaf ; 
+                z-index: 1 ;
+            }
+            .copyright{
+                /*著作權的框框*/
+                position: absolute ; top: 88% ; left: 15% ; 
+                width: 70% ; 
+                height: 12% ; 
+                background-color: black;
+                z-index: 20 ; 
+            }
+            .cc{
+                /*著作權的字型大小顏色*/
+                padding-top: 4% ;
+                text-align: center ; 
+                font-family: 'cwTeXYen', sans-serif;  
+                font-weight: 800px ; 
+                color: aliceblue ; 
+            }
+            .rightsquare{
+                /*放介紹文字的框框*/
+                position: absolute ; top: 5% ; left: 5% ; right: 5% ; bottom: 5% ;
+                height: 91% ; 
+                width: 90% ; 
+                background-color: #e0e5df ; 
+                padding: 15% ;
+                /*字的style*/
+                color: black;
+                text-align: left; 
+                font-family: 'cwTeXYen', sans-serif; 
+                font-weight: 1000px ;
+            }
+            .littletitle{
+                color:black; 
+                text-align: center ; 
+                text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+            }
+            .iconspace{
+                padding-left: 40%;
+            }
+.me:hover div
+{
+  animation-play-state: paused;
+}
+.me div
+{
+    animation: round 3s linear infinite;
+}
+
+#menu ul
+{
+	/* 取消ul樣式符號 */
+	list-style-type:none;
+	overflow:auto;
+}
+#menu ul li
+{
+	/* 利用float讓第一層li水平排列 */
+	float:left;
+}
+#menu ul li a
+{
+	
+	display:block;
+	float:left;
+	height:5%;
+	width: 100%;
+	text-align: center;
+	position: relative;
+    margin: 7px;/*讓ＢＡＲ有兼具*/
+	
+	
+}
+/* bar字型 */
+#menu ul li a
+{
+	color:black;
+	text-decoration:none;
+	line-height: 30px;
+}
+
+#menu ul li a:hover 
+{
+	color:white;
+}
